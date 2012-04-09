@@ -1,0 +1,33 @@
+application: battleshoe
+version: 5
+runtime: python
+api_version: 1
+
+handlers:
+- url: /media
+  static_dir: media
+  
+- url: /js
+  static_dir: js
+
+- url: /images
+  static_dir: images
+
+- url: /css
+  static_dir: css
+  
+- url: /angulartest
+  static_dir: angulartest
+
+- url: /app
+  static_dir: start
+  
+- url: /coverage.*
+  login: admin
+  script: gaeunit-coverage.py
+
+- url: /test.*
+  script: gaeunit.py
+
+- url: /.*
+  script: main.py

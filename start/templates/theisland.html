@@ -1,0 +1,75 @@
+  <tr>
+    <td align="center" valign="top">
+    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="60" align="left" valign="bottom" class="pageHeaderLine"><table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>The Island</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+        <!-- start of body --><!-- end of body -->
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+<tr>
+    <td align="center"><table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="table2">
+      <tr>
+        <td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="table3">
+          <tr>
+            <td align="center" valign="middle"><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="50" class="pageHeaderLine">Island {{stats.islandName}}</td>
+              </tr>
+              <tr>
+                <td align="left" class="moneyFooter"><p>Check how well you are performing against other companies in your island. Form allies or create competition with other companies to gain an advantage strategically. Remember, differentiation <br />
+                  is the key in many business strategy. So, plan wisely, overcome the challenges to win!<br />
+                  <br />
+                </p></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td height="10"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="table3">
+              <tr>
+                <td width="30">&nbsp;</td>
+                <td background="images/midline-hor.jpg">&nbsp;</td>
+                <td width="30">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td><p>&nbsp;</p>
+              <table width="90%" border="0" cellspacing="0" cellpadding="0" id="ranking">
+                <tr class="moneyFooter">
+                  <td height="25">Player</td>
+                  <td>Money</td>
+                  <td>Factories</td>
+                  <td>Workers</td>
+                  <td>Shoes</td>
+                  <td>Networth</td>
+                </tr>
+                <tr ng:repeat="player in ranking">
+                	<td>{{player.email}}</td>
+                	<td>{{player.money}}</td>
+                	<td>{{player.numPlants}}</td>
+                	<td>{{player.numWorkers}}</td>
+                	<td>{{player.numShoes}}</td>
+                	<td>{{player.networth}}</td>
+                </tr>
+              </table>
+              <p>&nbsp;</p>
+              <p><br />
+              </p></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>

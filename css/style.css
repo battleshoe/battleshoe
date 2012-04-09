@@ -1,0 +1,129 @@
+.pageHeaderLine {
+	font-family: "Myriad Pro";
+	font-size: 26px;
+	color: #000;
+	text-decoration:none;
+}
+.menuLine {
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	color: #FFF;
+	text-decoration:none;
+}
+.moneyFooter {
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	color: #666666;
+}
+.moneyHeader {
+	font-family: "Myriad Pro";
+	font-size: 34px;
+}
+
+.menuLine a:link {
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	color: #FFF;
+	text-decoration:none;
+}
+.menuLine a:visited {
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	color: #FFF;
+	text-decoration:none;
+}
+.menuLine a:hover {
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	color: #FFF;
+	text-decoration:none;
+}
+.menuLine {
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	color: #FFF;
+	text-decoration:none;
+}
+.statesLine {
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	color: #FFF;
+	text-decoration:none;
+}
+.welcomeLine {
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	color: #FFF;
+	text-decoration:none;
+}
+.welcomeLine a:link {
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	color: #FFF;
+	text-decoration:underline;
+}
+.welcomeLine a:visited {
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	color: #FFF;
+	text-decoration:underline;
+}
+.welcomeLine a:hover {
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	color: #FFF;
+	text-decoration:underline;
+}
+.welcomeLine a:active {
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	color: #FFF;
+	text-decoration:underline;
+}
+table{border-collapse:collapse;}
+/*table td{border: 1px solid #fff}*/
+table.stats td {background-color: #880000; border:3px solid #000;}
+white-border{border: 1px solid #fff}
+
+.align-right {text-align:right;}
+.link-list{margin:0;padding:0;}
+.link-list li{margin:0;padding:0;list-style:none;}
+
+.table1 {border-collapse: collapse;}
+.table1 td{border:3px solid #000; text-align:center;}
+
+.table2 {border-collapse: collapse;}
+.table2 td{border:1px solid #ccc; text-align:center;}
+
+.table3 {border-collapse: collapse;}
+.table3 td{border-collapse:collapse; border:none; text-align:center;}
+
+.btnlink {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:4px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #528ecc;
+}.btnlink:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}.btnlink:active {
+	position:relative;
+	top:1px;
+}

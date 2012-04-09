@@ -1,0 +1,94 @@
+/*
+ *  Basic css reset
+ */
+* {
+	vertical-align : baseline;
+	font-weight    : inherit;
+	font-family    : inherit;
+	font-style     : inherit;
+	font-size      : 100%;
+	outline        : 0;
+	padding        : 0;
+	margin         : 0;
+}
+
+body {
+	background: 	#fff;
+	font-family: 	Verdana, Geneva, Arial, Helvetica, sans-serif;
+	/*font-size: 	18px;*/
+}
+
+
+/*
+ * Django form 
+ */
+form th {
+    vertical-align:text-top;
+    text-align:right;
+}
+
+form td {
+    vertical-align:text-top;
+    text-align:left;
+}
+
+form label.error {
+    color:#ff0000;
+}
+
+/* Form errors */
+.errorlist {
+  	display: inline;
+  	list-style: none;
+  	font-size: 11px;
+  	color: #f00;
+}
+/*
+h2 {
+	
+	font-family: 	Helvetica, Arial, sans-serif;
+	font-size: 	14px;
+	color:          #0E0874;
+	padding: 5px 0px 0px 10px;
+}
+*/
+h3 {
+    border-bottom: #36BF00 solid 2px;
+    font-weight: bold;
+    font-size: 18px;
+}
+/*
+a {
+	color: #0066dd;
+   	text-decoration: none;
+   	font-weight: bold;
+   	padding: 5px 0px 0px 10px; 	
+}
+*/
+td,img {
+	padding: 5px 6px 7px 10px;
+}
+
+.login {
+	padding: 5px 0px 0px 10px;
+}
+
+#footer {
+    font-size: 12px;
+}
+
+#title {
+    font-weight: bold;
+
+}
+
+label { 
+	text-align: right; 
+	width: 250px;
+	float: left; 
+}
+
+
+
+
+

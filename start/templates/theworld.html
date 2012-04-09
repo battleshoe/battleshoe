@@ -1,0 +1,83 @@
+<div>
+	The World<br/>
+	
+	
+	<div>
+		<h3>Existing Games[{{egcounter}}]</h3>
+		<div>
+			<ul class="link-list1">
+				<li ng:repeat="game in existingGames">
+					<table>
+						<tr>
+							<td>Island Id:</td>
+							<td>{{game.islandId}}</td>
+						</tr>
+						<tr>
+							<td>Money:</td>
+							<td>{{game.money}}</td>
+						</tr>
+						<tr>
+							<td>Networth:</td>
+							<td>{{game.networth}}</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<a ng:href="/play?islandId={{game.islandId}}" class="btn btn-success">Play</a>
+							</td>
+						</tr>
+					</table>
+				</li>
+			</ul>
+		</div>
+	
+		<h3>Join Island [{{counter}}]</h3><!-- JOIN ISLAND SECTION START -->
+		<div>
+			<ul class="link-list2">
+				<li ng:repeat="island in islands">
+					<table>
+						<tr>
+							<td>Island name:</td>
+							<td>{{island.name}}</td>
+						</tr>
+						<tr>
+							<td>Current Population:</td>
+							<td>{{island.numOfPlayer}} / {{island.maxNumOfPlayers}}</td>
+						</tr>
+						<tr>
+							<td>Maximum Plants allowed:</td>
+							<td>{{island.maxNumOfPlants}}</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<a id=link1 ng:href="/join_island?islandId={{island.islandId}}" class="btn btn-success">Join</a>
+							</td>
+						</tr>
+					</table>
+				</li>
+			</ul>
+		</div><!-- JOIN ISLAND SECTION END -->
+		
+		<h3>Create Island</h3>
+		<div><!-- CREATE ISLAND SECTION START -->
+		<ul class="link-list3">
+			<table>
+				<tr>
+					<td>Island Name:</td>
+					<td><input type="text" name="islandname"/></td>
+				</tr>
+				<tr>
+					<td>Maximum Number of Players <a href="#" title="Maximum number of players competing on the island">?</a>:</td>
+					<td><input type="text" name="nplayer" /></td>
+				</tr>
+				<tr>
+					<td>Maximum Number of Plants <a href="#" title="Maximum number of players competing on the island">?</a>:</td>
+					<td><input type="text" name="nplant" title="Maximum number of plants a player can build"/></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button class="btn btn-success" ng:click="create()">Create</button></td>
+				</tr>
+			</table>
+		</div><!-- CREATE ISLAND SECTION END -->
+		</ul>
+	</div>
+</div>

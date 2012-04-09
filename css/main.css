@@ -1,0 +1,16 @@
+body{
+	background-color:#000;
+	color: #fff;
+}
+
+table{border-collapse:collapse;}
+/*table td{border: 1px solid #fff}*/
+table.stats td {background-color: #880000; border:2px solid #000;}
+white-border{border: 1px solid #fff}
+
+.align-right {text-align:right;}
+.link-list{margin:0;padding:0;}
+.link-list li{margin:0;padding:0;list-style:none;}
+
+.normal-table{border-collapse: collapse;}
+.normal-table td{border:1px solid #fff; text-align:center;}

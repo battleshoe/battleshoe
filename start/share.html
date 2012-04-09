@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:fb="https://www.facebook.com/2008/fbml">
+  <head>
+    <title>My Feed Dialog Page</title>
+  </head>
+  <body>
+    <div id='fb-root'></div>
+    <script src='http://connect.facebook.net/en_US/all.js'></script>
+    <p><a href="https://www.facebook.com/dialog/feed?app_id=123050457758183&link=http://www.battleshoe.appspot.com/share_index&picture=http://www.battleshoe.appspot.com/images/splash_logo.png&name=Battle%20Shoe&caption=Be%20the%20ULTIMATE%20Shoe%20Maker&description=Join%20us%20now!&message=Facebook%20Dialogs%20are%20so%20easy!&redirect_uri=http://www.battleshoe.appspot.com/main">Post to Feed</a></p>
+    <p id='msg'></p>
+
+    <script> 
+      FB.init({appId: "123050457758183", status: true, cookie: true});
+
+      function postToFeed() {
+
+        // calling the API ...
+        var obj = {
+          method: 'feed',
+          link: 'https://developers.facebook.com/docs/reference/dialogs/',
+          picture: 'http://fbrell.com/f8.jpg',
+          name: 'Facebook Dialogs',
+          caption: 'Reference Documentation',
+          description: 'Using Dialogs to interact with users.'
+        };
+
+        function callback(response) {
+          document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+        }
+
+        FB.ui(obj, callback);
+      }
+    
+    </script>
+  </body>
+</html>

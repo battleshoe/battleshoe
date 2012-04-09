@@ -1,0 +1,58 @@
+<div>
+	<p>Construct Manufacturing Plant</p>
+	
+	<div>
+		<table class="normal-table">
+			<tr>
+				<th>Region</th>
+				<th>Cost</th>
+				<th>Capacity</th>
+			</tr>
+			<tr>
+				<td>North</td>
+				<td>$100,000</td>
+				<td>600,000</td>
+			</tr>
+			<tr>
+				<td>South</td>
+				<td>$200,000</td>
+				<td>400,000</td>
+			</tr>
+			<tr>
+				<td>East</td>
+				<td>$50,000</td>
+				<td>1,000,000</td>
+			</tr>
+			<tr>
+				<td>West</td>
+				<td>$150,000</td>
+				<td>800,000</td>
+			</tr>
+		</table>
+	</div><br/>
+	Region:
+	<ul class="plantselection">
+	<select name="plant_region">
+		<option value="north">North</option>
+		<option value="south">South</option>
+		<option value="east">East</option>
+		<option value="west">West</option>
+	</select><br/>
+	<button class="btn btn-success" ng:click="buy_plant()">Construct Plants</button>
+	</ul>
+	<div>
+		<table>
+			<tr ng:repeat="plant in plants">
+				<td>Plant ID</td>
+				<td>{{plant.plantId}}</td>
+				<td>Hire Workers:</td>
+				<td><input type="text" name="asd" id="plantId{{plant.plantId}}"/></td>
+				<td>
+					<button ng:click="hire_worker(plant.plantId,'north')">Hire</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	
+</div>

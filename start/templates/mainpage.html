@@ -1,0 +1,159 @@
+<tr>
+  <td height="60" align="left" valign="bottom" class="pageHeaderLine"><table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="200">Main</td>
+      <td align="right" valign="bottom"><table width="350" border="0" cellpadding="0" cellspacing="0" class="moneyFooter">
+        <tr class="miniTabs">
+          <!-- 
+          <td align="right"><a href="#createnewisland">Create New Island</a></td>
+          <td align="right"><a href="#joinisland">Join Island</a></td>
+          <td align="right"><a href="#currentgames">Current Games                  </a></td>
+           -->
+        </tr>
+      </table></td>
+    </tr>
+  </table></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <td>
+  <!-- start of body --><!-- end of body -->
+  </td>
+</tr>
+<tr>
+<td align="center"><table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="table2">
+  <tr>
+    <td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="table3">
+      <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="394"><table width="350" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="center" valign="bottom" class="pageHeaderLine"><p><a name="createnewisland" id="createnewisland"></a>Create New Island</p></td>
+            </tr>
+            <tr>
+              <td valign="top" class="moneyFooter"><p>A new island is a new haven for you to build your own community of competitors with your friends or other players in the world. You can determine your own island name, maximum number of players, and maximum number of manufacturing plants for your shoes. Stay tuned for more features that you can customized! Create an island today.<br />
+                <br />
+              </p></td>
+            </tr>
+          </table></td>
+          <td background="/images/midline.jpg">&nbsp;</td>
+          <td width="393"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><table width="250" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="250" class="moneyFooter">Island Name</td>
+                </tr>
+                <tr>
+                  <td><input name=islandname type="text" class="moneyHeader" id="islandname" size="16" style="text-align:center" /></td>
+               </tr>
+             </table></td>
+           </tr>
+           <tr>
+             <td><table width="390" border="0" align="center" cellpadding="0" cellspacing="0">
+               <tr>
+                 <td width="250" class="moneyFooter"><br />
+                   Max Players</td>
+                 <td width="250" class="moneyFooter"><br />
+                   Max Plants</td>
+               </tr>
+               <tr>
+                 <td><input name="nplayer" type="text" class="moneyHeader" id="nplayer" size="4" style="text-align:center" /></td>
+                 <td><input name="nplant" type="text" class="moneyHeader" id="nplant" size="4" style="text-align:center" /></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="link-list3"><br /><button class="btnlink" ng:click="create()">Create</button></td>
+                    </tr>
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td width="10"><br /></td>
+              <td>&nbsp;</td>
+            </tr>
+        </table>
+          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="table3">
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="394"><table width="350" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td align="center" valign="bottom" class="pageHeaderLine"><p><a name="joinisland" id="joinisland"></a>Join Island</p></td>
+                </tr>
+                <tr>
+                  <td valign="top" class="moneyFooter"><p>If you are alone, join an existing island created by other players on Battle Shoe. Meet new friends and join their community, it will be a good opportunity to spar your knowledge and learn to excel on Battle Shoe together. As long as the island has a vacancy, join one now. There can only be benefits.<br />
+                    <br />
+                  </p></td>
+                </tr>
+              </table></td>
+              <td background="/images/midline.jpg">&nbsp;</td>
+              <td width="393"><table width="380" border="0" cellspacing="0" cellpadding="0" class="link-list2">
+                <tr class="moneyFooter">
+                  <td width="180" height="25">Island Name</td>
+                  <td width="80">Population</td>
+                  <td width="80">Max Plants</td>
+                  <td width="30">&nbsp;</td>
+                </tr>
+                <tr ng:repeat="island in islands">
+                  <td height="30" class="miniTabs">{{island.name}}</td>
+                  <td class="miniTabs">{{island.numOfPlayer}} / {{island.maxNumOfPlayers}}</td>
+                  <td class="miniTabs">{{island.maxNumOfPlants}}</td>
+                  <td><a class="btnlink" id=link1 ng:href="/join_island?islandId={{island.islandId}}" class="btn btn-success">Join</a></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td width="10"><br /></td>
+              <td>&nbsp;</td>
+            </tr>
+        </table>
+          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="table3">
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="394"><table width="350" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td align="center" valign="bottom" class="pageHeaderLine"><p><a name="currentgames" id="currentgames"></a>Current Games</p></td>
+                </tr>
+                <tr>
+                  <td valign="top" class="moneyFooter"><p>Remember to check your current games every hour, because game updates and results are released hourly. Communicate with your allies for a competitive strategy, and check out the hourly Island Times to find out more about key statistics of the macro and micro economics to improvise on your game strategy. Say no more, get back now!<br />
+                    <br />
+                  </p></td>
+                </tr>
+              </table></td>
+              <td background="/images/midline.jpg">&nbsp;</td>
+              <td width="393" align="center"><table border="0" align="center" cellpadding="0" cellspacing="0" class="link-list1">
+                <tr class="moneyFooter">
+                  <td width="250" height="25">Island Name</td>
+                  <td width="30">&nbsp;</td>
+                </tr>
+                <tr ng:repeat="game in existingGames">
+                  <td height="30" class="miniTabs">{{game.islandName}}</td>
+                  <td><a class="btnlink" ng:href="/play?islandId={{game.islandId}}" class="btn btn-success">Play</a></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td width="10"><br /></td>
+              <td>&nbsp;</td>
+            </tr>
+    </table>
+<br /></td>
+      </tr>
+    </table></td>
+  </tr>

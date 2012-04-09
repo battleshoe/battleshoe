@@ -1,0 +1,62 @@
+<div>
+	<p>Construct Manufacturing Plant</p>
+	
+	Select an existing Shoe Template to produce:
+	{{counter}}
+	<table>
+		<tr>
+			<td>Plant Id:</td>
+			<td>Sole:</td>
+			<td>Body:</td>
+			<td>Color:</td>
+			<td>Price:</td>
+			<td>Number of shoes already Exist:</td>
+			<td>Number of shoes you want to produce</td>
+		</tr>
+		
+		<tr ng:repeat="shoe in shoes">
+			<td>{{shoe.plantId}}</td>
+			<td>{{shoe.sole}}</td>
+			<td>{{shoe.body}}</td>
+			<td>{{shoe.color}}</td>
+			<td>{{shoe.price}}</td>
+			<td>{{shoe.qty}}</td>
+			<td>
+				<input type="text" value="number" name="number{{shoe.shoeId}}"/>
+			</td>
+			<td>
+				<button class="btn btn-success" ng:click="produce_shoe(shoe.plantId,shoe.shoeId)">Manufacture</button>
+			</td>
+		</tr>
+	</table>
+
+	<br/>
+	
+	Or create a new model:
+	Plant to produce:{{plcounter}}
+	<select name="plantId">
+		<option ng:repeat="plant in plants" value="{{plant.plantId}}">{{plant.plantId}}</option>
+	</select><br/>
+	Sole:
+	<select name="sole">
+		<option value="1">sole 1</option>
+		<option value="2">sole 2</option>
+		<option value="3">sole 3</option>
+	</select><br/>
+	Body:
+	<select name="body">
+		<option value="1">body 1</option>
+		<option value="2">body 2</option>
+		<option value="3">body 3</option>
+	</select><br/>
+	Color:
+	<select name="color">
+		<option value="1">color 1</option>
+		<option value="2">color 2</option>
+		<option value="3">color 3</option>
+	</select><br/>
+	Price:
+	<input type="text" value="price" name="price"/>
+	<button class="btn btn-success" ng:click="create_shoe()">Create</button>
+	
+</div>

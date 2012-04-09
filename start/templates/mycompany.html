@@ -1,0 +1,54 @@
+<td>
+<table width="940">
+	<tr width="940">
+		<td>
+			<div style="padding:5px 50px">
+				<h2>My Company</h2>
+				<table id="supply" width="800" style="border-collapse:collapse; border:1px solid">
+					<tr>
+						<th colspan="4">Supply</th>
+					</tr>
+					<tr>
+						<th style="border: 1px solid">Shoe ID</th>
+						<th style="border: 1px solid">Production Cost</th>
+						<th style="border: 1px solid">Selling Price</th>
+						<th style="border: 1px solid">Quantity</th>
+					</tr>
+					<tr ng:repeat="s in supply">
+					<td style="text-align:center;border: 1px solid">{{s.shoeId}}</td>
+						<td style="text-align:center;border: 1px solid">{{s.costPerUnit}}</td>
+						<td style="text-align:center;border: 1px solid">{{s.salePrice}}</td>
+						<td style="text-align:center;border: 1px solid">{{s.qty}}</td>
+					</tr>
+				</table>
+				<br />
+				<br />
+				<table id="demand"  width="800" style="border-collapse:collapse; border:1px solid">
+					<tr>
+						<th colspan="4">Demand</th>
+					</tr>
+					<tr>
+						<th style="border: 1px solid">Shoe ID</th>
+						<th style="border: 1px solid">Shipping Cost</th>
+						<th style="border: 1px solid">Selling Price</th>
+						<th style="border: 1px solid">Quantity</th>
+					</tr>
+					<tr ng:repeat="d in demand">
+						<td style="text-align:center;border: 1px solid">{{d.shoeId}}</td>
+						<td style="text-align:center;border: 1px solid">{{d.shippingCost}}</td>
+						<td style="text-align:center;border: 1px solid">{{d.salePrice}}</td>
+						<td style="text-align:center;border: 1px solid">{{d.qty}}</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div style="padding:5px 150px">
+				<div id="scratchbox"></div>
+			</div>
+		</td>
+	</tr>
+</table>
+</td>

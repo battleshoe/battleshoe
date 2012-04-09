@@ -1,0 +1,102 @@
+<tr>
+  <td align="center" valign="top">
+  <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="60" align="left" valign="bottom" class="pageHeaderLine"><table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>Central Bank</td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+      <!-- start of body -->
+      <table width="800" border="1" align="center" cellpadding="0" cellspacing="0" class="table2">
+        <tr>
+          <td width="300"><table width="300" border="0" cellpadding="0" cellspacing="0" class="table3">
+            <tr>
+              <td width="120" height="120" align="center" valign="middle"><img src="/images/paypal.jpg" width="72" height="87" /></td>
+              <td align="center" valign="middle"><span class="moneyHeader">$0.99</span><br />
+                <span class="moneyFooter">US Dollars</span></td>
+            </tr>
+          </table></td>
+          <td width="500" align="center" valign="middle"><table width="500" border="0" cellpadding="0" cellspacing="0" class="table3">
+            <tr>
+              <td width="100" height="120" align="center" valign="middle"><img src="/images/money.jpg" width="80" height="85" /></td>
+              <td width="100" align="center" valign="middle">&nbsp;</td>
+              <td width="100" align="center" valign="middle">&nbsp;</td>
+              <td width="200" align="center" valign="middle"><span class="moneyHeader">$1 million</span><br />
+                <span class="moneyFooter">Game value</span></td>
+              <td>
+              	<select name="p099">
+              		<option ng:repeat="g in existingGames" value="{{g.playerId}}">Island {{g.islandName}}</option>
+              	</select>
+              </td>
+              <td>
+              	<button ng:click="buy('p099')">Buy now!</button>
+              </td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="300" border="0" cellpadding="0" cellspacing="0" class="table3">
+            <tr>
+              <td width="120" height="120" align="center" valign="middle"><img src="/images/paypal.jpg" width="72" height="87" /></td>
+              <td align="center" valign="middle"><span class="moneyHeader">$1.99</span><br />
+                <span class="moneyFooter">US Dollars</span></td>
+            </tr>
+          </table></td>
+          <td align="center" valign="middle"><table width="500" border="0" cellpadding="0" cellspacing="0" class="table3">
+            <tr>
+              <td width="100" height="120" align="center" valign="middle"><img src="/images/money.jpg" width="80" height="85" /></td>
+              <td width="100" align="center" valign="middle"><img src="/images/money.jpg" width="80" height="85" /></td>
+              <td width="100" align="center" valign="middle">&nbsp;</td>
+              <td width="200" align="center" valign="middle"><span class="moneyHeader">$5 million</span><br />
+                <span class="moneyFooter">Game value</span></td>
+              <td>
+              	<select name="p199">
+              		<option ng:repeat="g in existingGames" value="{{g.playerId}}">Island {{g.islandName}}</option>
+              	</select>
+              </td>
+              <td>
+              	<button ng:click="buy('p199')">Buy now!</button>
+              </td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="300" border="0" cellpadding="0" cellspacing="0" class="table3">
+            <tr>
+              <td width="120" height="120" align="center" valign="middle"><img src="/images/paypal.jpg" width="72" height="87" /></td>
+              <td align="center" valign="middle"><span class="moneyHeader">$2.99</span><br />
+                <span class="moneyFooter">US Dollars</span></td>
+            </tr>
+          </table></td>
+          <td align="center" valign="middle"><table width="500" border="0" cellpadding="0" cellspacing="0" class="table3">
+            <tr>
+              <td width="100" height="120" align="center" valign="middle"><img src="/images/money.jpg" width="80" height="85" /></td>
+              <td width="100" align="center" valign="middle"><img src="/images/money.jpg" width="80" height="85" /></td>
+              <td width="100" align="center" valign="middle"><img src="/images/money.jpg" width="80" height="85" /></td>
+              <td width="200" align="center" valign="middle"><span class="moneyHeader">$10 million</span><br />
+                <span class="moneyFooter">Game value</span></td>
+              <td>
+              	<select name="p299">
+              		<option ng:repeat="g in existingGames" value="{{g.playerId}}">Island {{g.islandName}}</option>
+              	</select>
+              </td>
+              <td>
+              	<button ng:click="buy('p299')">Buy now!</button>
+              </td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <!-- end of body -->
+      </td>
+    </tr>
+  </table>
+  </td>
+</tr>
